@@ -12,6 +12,8 @@ namespace WebShop.Database
         public DbSet<ConferencePayment> ConferencePayment { get; set; }
         public DbSet<AccommodationPayment> AccommodationPayment { get; set; }
         public DbSet<TransportPayment> TransportPayment { get; set; }
+        public DbSet<EquipmentOrderListPayment> EquipmentOrderListPayment { get; set; }
+        public DbSet<EquipmentOrderItem> EquipmentOrderItem { get; set; }
 
         public WebShopDbContext() : base() { }
 

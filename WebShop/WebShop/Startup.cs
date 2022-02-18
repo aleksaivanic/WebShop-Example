@@ -35,8 +35,10 @@ namespace WebShop
                   options.UseMySql(CreateConnectionStringFromEnvironment()).UseLazyLoadingProxies(), ServiceLifetime.Transient);
 
             services.AddScoped<IConferencePaymentRepository, ConferencePaymentRepository>();
+            services.AddScoped<IEquipmentOrderListPaymentRepository, EquipmentOrderListPaymentRepository>();
 
             services.AddScoped<IConferencePaymentService, ConferencePaymentService>();
+            services.AddScoped<IEquipmentOrderListPaymentService, EquipmentOrderListPaymentService>();
 
             services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
             {
