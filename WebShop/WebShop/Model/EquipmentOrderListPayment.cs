@@ -9,8 +9,7 @@ namespace WebShop.Model
     {
         public int Id { get; set; }
         public virtual List<EquipmentOrderItem> EquipmentOrderItems { get; set; }
-        public string SupplierFirstName { get; set; }
-        public string SupplierLastName { get; set; } 
+        public string SupplierName { get; set; }
         public string SupplierUsername { get; set; } 
 
         public EquipmentOrderListPayment()
